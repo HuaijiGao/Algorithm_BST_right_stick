@@ -1,0 +1,12 @@
+function Stickify(new, root)
+    if root.left = new then
+        RightRotate(root.value)
+        
+Analysis:
+• To construct a BST from scratch, our function BSTInsert should always ensure it is a ”right
+  stick”. Also, if the BST is already a ”right stick”, then running the BSTInsert algorithm (with the
+  Stickify function) should always leave the tree as a ”right stick”.
+• Therefore, the conditional flow control in our algorithm should detect whether the newly inserted
+  node is in the left subtree or in the right subtree.
+• If it is in the left subtree, then a rotation right is performed. Otherwise, just let leave it without
+  modification.
